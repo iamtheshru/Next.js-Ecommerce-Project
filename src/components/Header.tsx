@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useCart } from "@/context/CartContext"; 
+import { useCart } from "@/context/CartContext";
 
 // Navigation Links
 const navLinks = [
@@ -21,7 +21,7 @@ const iconLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { cart } = useCart(); 
+  const { cart } = useCart();
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Header() {
       <div className="main_container mx-auto flex justify-between items-center p-4">
 
         <Link href="/" className="text-teal-600 font-bold text-xl flex items-center">
-          <img src="/img/logo.png" alt="Logo" className="h-8 w-auto mr-2" />
+          <img src="/img/Logo.png" alt="Logo" className="h-8 w-auto mr-2" />
         </Link>
 
         <nav className="hidden md:flex items-center">
